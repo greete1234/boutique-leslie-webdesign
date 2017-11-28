@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <title>Boutique Leslie</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="menu">
+                <ul>
+                    <a href="#">
+                        <li><img src="icon/my-account.png" /></li>
+                        <li>Minu konto</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="icon/checkout.png" /></li>
+                            <li>Vormista ost</li>
+                    </a>
+                    <a href="#">
+                        <li><img src="icon/login.png" /></li>
+                        <li>Logi sisse</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="left-side">
+                    <div class="logo">
+                        <a href="index.html">
+			                 <img src="img/logo.png" />
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">AVALEHT</a></li>
+                            <li><div class="divider"></div></li>
+                            <li><a href="#">MEIST</a></li>
+                            <li><div class="divider"></div></li>
+                            <li><a href="#">TOOTED</a></li>
+                            <li><div class="divider"></div></li>
+                            <li><a href="#">KONTAKT</a></li>
+                            <li><div class="divider"></div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="search">
+                        <form id="search">
+                            <img src="icon/search.png" /><input type="text" name="search" placeholder="Otsi">
+                        </form>
+                    </div>
+                    <div class="search-icon">
+                        <a href="#" class="search-icon" onclick="dropdownSearch()">
+                            <img src="icon/search.png" />
+                        </a>
+                    </div>
+                    <div class="responsive-menu">
+                        <a href="#" class="responsive-menu" onclick="dropdownMenu();dropdownSearch()">
+                            <img src="icon/menu.png" />
+                        </a>
+                    </div>
+                    <div class="shopping-cart">
+                        <a href="#">
+                            <img src="icon/shopping-cart.png" />
+                            <div class="items-number" id="items-number"> 0 </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="dropdown-search" id="dropdown-search">
+        <form id="search">
+            <img src="icon/search.png" /><input type="text" name="search" placeholder="Otsi">
+        </form>
+    </div>
+    <div class="dropdown-menu" id="dropdown-menu">
+        <div class="account">
+            <a href="#">Minu konto</a>
+            <a href="#">Vormista ost</a>
+            <a href="#">Logi sisse</a>
+        </div>
+        <ol>
+            <a href="#">
+                <li>AVALEHT</li>
+            </a>
+            <a href="#">
+                <li>MEIST</li>
+            </a>
+            <a href="#">
+                <li>TOOTED</li>
+            </a>
+            <a href="#">
+                <li>KONTAKT</li>
+            </a>
+        </ol>
+    </div>  
+    <div class="cover-photo">
+            <img src="img/coverphoto.jpg" />
+    </div>
+    <div class="category-border"> </div>
+    <div class="category-menu">
+        <ul>
+            <a href="#">
+                <div class="menu-item">
+                    <li>Kleidid</li>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-item">
+                    <li>Seelikud</li>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-item">
+                    <li>Püksid</li>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-item">
+                    <li>Pluusid</li>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-item">
+                    <li>Ülerõivad</li>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-item">
+                    <li>Jalatsid</li>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-item">
+                    <li>Aksessuaarid</li>
+                </div>
+            </a>
+        </ul>
+    </div>  
+    <div class="content-container">
+        <div class="new-products">
+            <h1>UUED TOOTED</h1>
+            <div class="products-container">
+                <a href="#">
+                    <div class="product">
+                        <img src="img/new-item1.jpg" />
+                        <div class="product-information">
+                            <div class="container">
+                                <h2>Monton Olympic</h2>
+                                <div class="price">79,65€</div>
+                                <button type="button" onclick="addToCart()">Lisa ostukorvi</button>
+                            </div>
+                            <div class="category">KLEIT</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="product">
+                        <img src="img/new-item2.jpg" />
+                        <div class="product-information">
+                            <div class="container">
+                                <h2>TOMMYXIGIGI</h2>
+                                <div class="price">235€</div>
+                                <button type="button" onclick="addToCart()">Lisa ostukorvi</button>
+                            </div>
+                            <div class="category">KINGAD</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="product">
+                        <img src="img/new-item3.jpg" />
+                        <div class="product-information">
+                            <div class="container">
+                                <h2>TOMMYXIGIGI</h2>
+                                <div class="price">150€</div>
+                                <button type="button" onclick="addToCart()">Lisa ostukorvi</button>
+                            </div>
+                            <div class="category">PLUUS</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="product">
+                        <img src="img/new-item4.jpg" />
+                        <div class="product-information">
+                            <div class="container">
+                                <h2>TOMMYXIGIGI</h2>
+                                <div class="price">180€</div>
+                                <button type="button" onclick="addToCart()">Lisa ostukorvi</button>
+                            </div>
+                            <div class="category">PÜKSID</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="view-more">
+                <a href="#">Vaata kõiki ></a>
+            </div>
+        </div>
+        <div class="popular">
+            <h1>POPULAARSED</h1>
+            <div class="products-container">
+                <a href="#">
+                    <div class="product">
+                        <img src="img/popular1.jpg" />
+                        <div class="product-information">
+                            <div class="container">
+                                <h2>Dior Diorama</h2>
+                                <div class="price">415€</div>
+                                <button type="button" onclick="addToCart()">Lisa ostukorvi</button>
+                            </div>
+                            <div class="category">PÄIKESEPRILLID</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="product">
+                        <img src="img/popular2.jpg" />
+                        <div class="product-information">
+                            <div class="container">
+                                <h2>S.OLIVER Black Label</h2>
+                                <div class="price">199,99€</div>
+                                <button type="button" onclick="addToCart()">Lisa ostukorvi</button>
+                            </div>
+                            <div class="category">JOPE</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="product">
+                        <img src="img/popular3.jpg" />
+                        <div class="product-information">
+                            <div class="container">
+                                <h2>TOMMYXIGIGI</h2>
+                                <div class="price">150€</div>
+                                <button type="button" onclick="addToCart()">Lisa ostukorvi</button>
+                            </div>
+                            <div class="category">PLUUS</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="product">
+                        <img src="img/popular4.jpg" />
+                        <div class="product-information">
+                            <div class="container">
+                                <h2>Lauren</h2>
+                                <div class="price">259,99€</div>
+                                <button type="button" onclick="addToCart()">Lisa ostukorvi</button>
+                            </div>
+                            <div class="category">KOTT</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="view-more">
+                <a href="#">Vaata kõiki ></a>
+            </div>
+        </div>    
+    </div>
+    <div class="brands">
+        <div class="logos">
+            <a href="#">
+                <img src="img/LV.png" />
+            </a>
+            <a href="#">
+                <img src="img/Gucci.png" />
+            </a>
+            <a href="#">
+                <img src="img/D&G.png" />
+            </a>
+            <a href="#">
+                <img src="img/Dior.png" />
+            </a>
+            <a href="#">
+                <img src="img/Chanel.png" />
+            </a>
+            <a href="#">
+                <img src="img/TOMMY.png" />
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="e-shop">
+                <ol>
+                    <li>
+                        <h2>E-pood</h2>
+                    </li>
+                    <li><a href="#">Kuidas osta?</a></li>
+                    <li><a href="#">Müügitingimused</a></li>
+                    <li><a href="#">Kauba eest tasumine</a></li>
+                    <li><a href="#">Kohaletoimetamine</a></li>
+                    <li><a href="#">Järelmaks</a></li>
+                    <li><a href="#">Tagastamine</a></li>
+                    <li><a href="#">Pretentsiooni esitamine</a></li>
+                </ol>
+            </div>
+            <div class="company">
+                <ol>
+                    <li>
+                        <h2>Ettevõte</h2>
+                    </li>
+                    <li><a href="#">Ettevõttest</a></li>
+                    <li><a href="#">Ajalugu</a></li>
+                    <li><a href="#">Pressinurk</a></li>
+                    <li><a href="#">Meeskond</a></li>
+                    <li><a href="#">Tule tööle</a></li>
+                </ol>
+            </div>
+            <div class="col-3">
+                <div class="my-account">
+                    <ol>
+                        <li>
+                            <h2>Minu konto</h2>
+                        </li>
+                        <li><a href="#">Ettevõttest</a></li>
+                        <li><a href="#">Ajalugu</a></li>
+                        <li><a href="#">Pressinurk</a></li>
+                        <li><a href="#">Meeskond</a></li>
+                        <li><a href="#">Tule tööle</a></li>
+                    </ol>
+                </div>
+                <div class="help">
+                    <ol>
+                    <li>
+                        <h2>Abi</h2>
+                    </li>
+                    <li><a href="#">KKK</a></li>
+                    <li><a href="#">Klienditugi</a></li>
+                </ol>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="newsletter">
+                    <h2>Uudiskiri</h2>
+                    <input type="text" name="email" placeholder="Sisesta oma e-mail">
+                    <button type="button">Liitu</button>
+                </div>
+                <div class="socialmedia">
+                    <h2>Jälgi meid</h2>
+                    <a href="#">
+                        <img src="icon/facebook.png" />
+                    </a>
+                    <a href="#">
+                        <img src="icon/twitter.png" />
+                    </a>
+                    <a href="#">
+                        <img src="icon/instagram.png" />
+                    </a>
+                    <a href="#">
+                        <img src="icon/youtube.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© www.boutiqueleslie.ee. Kõik õigused kaitstud. Tundmatu tee 55, 11111 Tallinn, tel. 65555555, e-mail info@boutiqueleslie.ee</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Näitab või peidab dropdown otsinguvälja.  
+        function dropdownSearch() {
+            document.getElementById("dropdown-search").classList.toggle("show");
+        }
+    </script>
+    <script>
+        // Näitab või peidab dropdown menüü.
+        function dropdownMenu() {
+            document.getElementById("dropdown-menu").classList.toggle("show");
+        }
+    </script>
+    <script>
+        // Kui vajutada toote juures olevat ''Lisa ostukorvi'' nuppu, siis header'is ostukorvi ikooni juures olev number suureneb ühe võrra.
+        var counter = 0;
+        
+        function addOne() {
+            return counter +=1;
+        }
+        function addToCart(){
+            document.getElementById("items-number").innerHTML = addOne();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,528 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+header .header-top {
+    height: 44px;
+    background-color: black;
+    
+}
+
+header .header-top .menu {
+    width: 83%;
+    margin: 0 auto;
+}
+
+header .header-top .menu a {
+    color: white;
+    font-family: 'Noto Serif', serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+header .header-top .menu ul {
+    float: right;
+    margin: 10px 0 0 0;
+}
+
+header .header-top .menu ul li {
+    color: white;
+    vertical-align: middle;
+}
+
+header .header-top .menu ul li img {
+    margin: 0 3px 0 23px;
+}
+
+header .header-bottom {
+    height: 62px;
+    border-bottom: solid black 4px;
+}
+
+header .header-bottom .container {
+    width: 83%;
+    margin: 0 auto;
+}
+
+header .header-bottom .left-side {
+    float: left;
+    display: flex;
+}
+
+header .header-bottom .left-side .logo {
+    margin-top: 6px;
+}
+
+header .header-bottom .left-side .menu {
+    margin-left: 94px;
+}
+
+header .header-bottom .left-side .menu a {
+    font-size: 16px;
+    font-family: 'Century', serif;
+    color: black;
+}
+
+header .header-bottom .left-side .menu a:hover {
+    color: #838383;
+}
+
+header .header-bottom .left-side .menu .divider {
+    border-right: dashed 1px #d7d7d7;
+    height: 52px;
+    margin: 5px 23px;
+}
+
+header .header-bottom .left-side ul {
+    margin: 0;
+    padding: 0;
+}
+
+header .header-bottom .left-side ul li {
+    vertical-align: middle;
+}
+
+header .header-bottom .right-side {
+    float: right;
+    display: flex;
+    margin-top: 14px;
+}
+
+header .header-bottom .right-side .search input {
+    border: 0;
+    outline: none;
+    margin-left: 10px;
+}
+
+header .header-bottom .right-side .search form {
+    height: 32px;
+    width: 270px;
+    margin-right: 33px;
+    display: flex;
+    border: solid 1px black;
+    
+}
+
+header .header-bottom .right-side .search form img {
+    height: 18px;
+    padding: 7px 0 0 7px;
+}
+
+header .header-bottom .right-side .search-icon {
+    display: none;
+}
+
+header .header-bottom .right-side .responsive-menu {
+    display: none;
+}
+
+.dropdown-search {
+    display: none;
+    padding: 5px 5px 0 5px;
+}
+
+.dropdown-search input {
+    border: 0;
+    outline: none;
+    margin-left: 10px;
+}
+
+.dropdown-search form {
+    height: 32px;
+    width: 100%;
+    margin: 3px 33px 0 0;
+    display: flex;
+    border: solid 1px black;
+}
+
+.dropdown-search form img {
+    height: 18px;
+    padding: 7px 0 0 7px;
+}
+
+.shopping-cart {
+    position: relative;
+}
+
+.shopping-cart .items-number {
+    position: absolute;
+    top: 5px;
+    left: 23px;
+    background: #E80000;
+    color: white;
+    font-size: 11px;
+    padding: 1px 5px;
+    border-radius: 14px;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu ol a {
+    font-size: 16px;
+    font-family: 'Century', serif;
+    color: black;
+}
+
+.dropdown-menu .account a {
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    font-family: 'Noto Serif', serif;
+    font-size: 12px;
+}
+
+.dropdown-menu .account {
+    margin: 20px 10px 10px 5px;
+}
+
+.dropdown-menu ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu ol li{
+    padding: 15px;
+    border-bottom: dashed 1px #d7d7d7;
+}
+
+.cover-photo img {
+    width: 100%;
+    display: block;
+}
+
+.category-border {
+    height: 26px;
+    background: black;
+    border-bottom: solid 7px #383838;
+}
+
+.category-menu {
+    position: relative;
+    margin: 0 auto;
+    width: 83%;
+}
+
+.category-menu ul {
+    position: absolute;
+    top: -90px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+.category-menu ul .menu-item {
+    height: 120px;
+    width: 120px;
+    background: black;
+    border-radius: 60px;
+}
+
+.category-menu ul li {
+    line-height: 120px;
+    width: 120px;
+    text-align: center;
+}
+
+.category-menu ul a {
+    color: white;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.category-menu ul a:hover {
+    color: #DADADA;
+}
+
+.content-container {
+    width: 83%;
+    margin: 0 auto;
+}
+
+.products-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 27px;
+    padding-bottom: 11px;
+    border-bottom: solid black 1px;
+}
+
+.new-products h1 {
+    margin-top: 12%;
+}
+
+.product-information {
+    margin-top: 10px;
+    font-family: 'Noto Serif', serif;
+}
+
+.product-information h2 {
+    margin: 0 0 14px 0;
+    font-size: 16px;
+    color: #393939;
+}
+
+.product-information h2:hover, .product-information .price:hover {
+    color: #646464;
+}
+
+.product-information .container {
+   float: left;
+}
+
+.product-information .price {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.product-information .category {
+    float: right;
+    font-size: 12px;
+    color: #515151;
+    margin-top: 5px;
+}
+
+.product-information button {
+    color: white;
+    background-color: black;
+    margin-top: 20px;
+    border: none;
+    padding: 5px 10px;
+}
+
+.view-more {
+    float: right;
+    margin-top: 50px;
+    font-family: 'Noto Serif', serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.view-more a {
+    color: #393939;
+}
+
+.popular h1 {
+    margin-top: 120px;
+}
+
+.brands {
+    background: #E8E8E8;
+    border-top: solid 1px #C0C0C0;
+    margin-top: 180px;
+}
+
+.brands .logos {
+    width: 95%;
+    max-width: 1510px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+}
+
+.brands .logos img {
+    width: 100%;
+}
+
+.brands .logos a {
+    padding: 0 15px;
+}
+
+footer {
+    background-color: #242424;
+}
+
+footer h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    color: #E8E8E8;
+    margin: 0;
+}
+
+footer a {
+    font-family: 'Noto Serif', serif;
+    font-size: 13px;
+    color: #E8E8E8;
+}
+
+footer a:hover {
+    color: #838383;
+}
+
+footer ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 40px 0 0;
+}
+
+footer ol li {
+    padding-bottom: 10px;
+}
+
+footer .footer-top {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 83%;
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+footer .footer-top .help {
+    padding-top: 20px;
+}
+
+footer .footer-top .newsletter input {
+    width: 360px;
+    background: #555555;
+    border: 1px solid black;
+    color: #E8E8E8;
+    height: 30px;
+    padding-left: 15px;
+    
+}
+
+footer .footer-top .newsletter input::placeholder {
+    color: #909090;
+}
+
+footer .footer-top button {
+    width: 60px;
+    height: 33px;
+    background: black;
+    border: none;
+    color: #E8E8E8;
+    font-family: 'Noto Serif', serif;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+footer .footer-top .col-4 h2 {
+    padding-bottom: 20px;
+}
+
+footer .footer-top .socialmedia {
+    margin-top: 25%;
+}
+
+footer .footer-top .socialmedia img {
+    margin-right: 34px;
+}
+
+footer .footer-bottom {
+    
+    background-color: black;
+}
+
+footer .footer-bottom .container {
+    width: 83%;
+    margin: 0 auto;
+}
+
+footer .footer-bottom p {
+    color: #979797;
+    font-family: 'Noto Serif', serif;
+    font-size: 12px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.show {
+    display: block;
+}
+
+@media only screen and (max-width: 1448px) {
+    footer .footer-top .newsletter input {
+        width: 220px;
+}
+
+@media only screen and (max-width: 1305px) {
+    header .header-bottom .search {
+        display: none;
+    }
+    .category-menu {
+        display: none;
+    }
+    header .header-bottom .right-side .search-icon {
+    display: block;
+    margin: 5px 20px 0 0;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    header .header-bottom .left-side .menu {
+        display: none;
+    }
+    
+    header .header-top {
+        display: none;
+    }
+    
+    header .header-bottom .right-side .responsive-menu {
+        display: block;
+        margin: 5px 20px 0 0;
+    }
+    header .header-bottom .right-side .search-icon {
+    display: none;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    footer .footer-bottom p {
+    font-size: 10px;
+    }
+}       
+
+@media only screen and (max-width: 655px) {
+    h1 {
+    font-size: 21px;
+    }
+}        
+    
+@media only screen and (max-width: 620px) {
+    .brands .logos {
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .brands .logos img {
+        height: 50px;
+        width: auto;
+    }
+}    
+    
+@media only screen and (max-width: 512px) {
+    footer .footer-top {
+        display: none;
+    }
+}    
+    
+@media only screen and (max-width: 450px) {
+    header .header-bottom .right-side .responsive-menu {
+    margin: 5px 15px 0 0;
+    }
+}    
+
